@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card"
+        android:background="#FFF"
+        android:paddingRight="@dimen/pading_card"
+        android:padding="10dp">
+
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/txvName"
+          android:textColor="@color/colorBlack"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/margin_left"
+          android:text="Pruebaeasdzghrsadh"
+          android:textSize="@dimen/text_size_item"
+          />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_toLeftOf="@+id/imvSum"
+            android:layout_marginRight="@dimen/margin_left"
+            android:layout_alignBaseline="@+id/txvName"
+            android:id="@+id/edtCount"
+            />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_sum"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_left"
+            android:id="@+id/imvSum"
+            />
+
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_sub"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imvSum"
+            android:id="@+id/imvSub"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

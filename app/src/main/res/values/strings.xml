@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Los100Montaditos</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_order_alf">Ordenar Alfabeticamente</string>
+    <string name="action_order_des">Orden descendente</string>
+    <string name="action_order_mon">Primero montaditos</string>
+    <string name="action_order_beb">Primero bebidas</string>
+    <string name="btn_ok">Realizar pedido</string>
+    <string name="search">Buscar</string>
+    <string name="only_mon">Solo montaditos</string>
+    <string name="only_beb">Solo bebidas</string>
+    <string name="all">Todos los productos</string>
+    <string name="title_dialog">100 Montaditos</string>
+    <string name="msg_dialog">Elija solo lo que desea ver</string>
+    <string name="acept">Aceptar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="save_msg">Cambios guardados</string>
+
+    <string-array name="selection">
+
+        <item>Solo montaditos</item>
+        <item>Solo bebidas</item>
+        <item>Todos nuestros productos</item>
+
+    </string-array>
+</resources>
