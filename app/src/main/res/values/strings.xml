@@ -15,6 +15,7 @@
     <string name="acept">Aceptar</string>
     <string name="cancel">Cancelar</string>
     <string name="save_msg">Cambios guardados</string>
+    <string name="action_view">Ver solo...</string>
 
     <string-array name="selection">
 

@@ -21,6 +21,7 @@ import java.util.List;
 public class ListProductAdapter extends ArrayAdapter<Producto> {
 
     private Context context;
+    private ArrayList<Producto> localList;
     public static final int TYPE_ORDER_ASC = 1;
     public static final int TYPE_ORDER_DES = 2;
     public static final int FIRST_MONTADITOS = 3;
@@ -35,6 +36,7 @@ public class ListProductAdapter extends ArrayAdapter<Producto> {
         super(context, R.layout.item_list_product,
                 new ArrayList<Producto>(ListProductRepository.getInstace(context)));
         this.context = context;
+        this.localList = ListProductRepository.getInstace(context);
     }
 
     public ListProductAdapter(Context context, ArrayList<Parcelable> datas) {
@@ -75,6 +77,7 @@ public class ListProductAdapter extends ArrayAdapter<Producto> {
 
         holder.txvName.setText(getItem(position).getNombre());
         holder.edtCount.setText(String.valueOf(getItem(position).getCantidad()));
+
 
         holder.imvSum.setOnClickListener(new View.OnClickListener() {
             @Override

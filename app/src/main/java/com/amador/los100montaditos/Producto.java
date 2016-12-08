@@ -17,7 +17,6 @@ public class Producto implements Comparable<Producto>, Parcelable {
     public static final String TAG_MONTADITO = "montadito";
     public static final String TAG_BEBIDA = "bebida";
 
-
     public static final Comparator<Producto> ORDRBY_ASC = new Comparator<Producto>() {
         @Override
         public int compare(Producto producto, Producto t1) {
@@ -104,8 +103,27 @@ public class Producto implements Comparable<Producto>, Parcelable {
     }
 
     @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(this.cantidad);
-        parcel.writeString(this.nombre);
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(this.nombre);
+        dest.writeInt(this.cantidad);
+        dest.writeString(this.tag);
     }
+
+    protected Producto(Parcel in) {
+        this.nombre = in.readString();
+        this.cantidad = in.readInt();
+        this.tag = in.readString();
+    }
+
+    public static final Creator<Producto> CREATOR = new Creator<Producto>() {
+        @Override
+        public Producto createFromParcel(Parcel source) {
+            return new Producto(source);
+        }
+
+        @Override
+        public Producto[] newArray(int size) {
+            return new Producto[size];
+        }
+    };
 }

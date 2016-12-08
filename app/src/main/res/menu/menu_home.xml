@@ -1,36 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
 
 
+    <item
+        android:orderInCategory="0"
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
 
+
+    <item
+        android:title="@string/action_view"
+        android:icon="@android:drawable/ic_menu_view"
+        android:id="@+id/action_view"
+        android:showAsAction="always"
+        />
 
     <item
         android:title="@string/action_order_alf"
         android:icon="@android:drawable/ic_menu_sort_alphabetically"
         android:id="@+id/action_order_alf_asc"
-        android:showAsAction="always"
-        android:actionViewClass="android.support.v7.widget.SearchView"
+        android:showAsAction="never"
         />
 
     <item
         android:title="@string/action_order_des"
         android:id="@+id/action_order_alf_desc"
         android:showAsAction="never"
-        android:actionViewClass="android.support.v7.widget.SearchView"
         />
 
     <item
         android:title="@string/action_order_mon"
         android:id="@+id/action_order_mon"
         android:showAsAction="never"
-        android:actionViewClass="android.support.v7.widget.SearchView"
         />
 
     <item
         android:title="@string/action_order_beb"
         android:id="@+id/action_order_beb"
         android:showAsAction="never"
-        android:actionViewClass="android.support.v7.widget.SearchView"
         />
 
 </menu>
