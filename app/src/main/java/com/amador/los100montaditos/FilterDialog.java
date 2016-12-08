@@ -35,7 +35,7 @@ public class FilterDialog extends DialogFragment {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.title_dialog);
-
+        op = 0;
 
         String[] datos = getResources().getStringArray(R.array.selection);
         builder.setSingleChoiceItems(datos,0, new DialogInterface.OnClickListener() {
